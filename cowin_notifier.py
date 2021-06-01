@@ -6,7 +6,7 @@ import datetime
 
 
 try:
-    pincode = 690514
+    pincode = #enter your pincode here
     x = datetime.date.today()
     date = x.strftime("%d-%m-%y")
     url ='https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode={}&date={}'.format(pincode,date)
@@ -36,4 +36,4 @@ if url != None:
                         timeout =80
                     )
 
-        time.sleep(60*60)
+        time.sleep(60*60) #setting the interval(currently set to 1 hour)
